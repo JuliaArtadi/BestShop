@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>BestShop</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;700;800&display=swap"
@@ -13,37 +11,29 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header class="header">
+<body id="home">
+<header id="header" class="header">
     <div class="container header__container">
-        <a href="/" class="logo">BestShop</a>
+        <a href="#home" class="logo">BestShop</a>
         <div class="menu">
             <ul class="header__nav">
                 <li class="header__nav-item">
-                    <a href="">
-                        Why us
-                    </a>
+                    <a href="#stats">Why us</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="">
-                        Benefits
-                    </a>
+                    <a href="#benefits">Benefits</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="">
-                        Prices
-                    </a>
+                    <a href="#pricing">Prices</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="">
-                        Contact
-                    </a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
 </header>
-<section class="hero">
+<section id="hero" class="hero">
     <h1 class="hero__title">
         Sell more!
     </h1>
@@ -55,13 +45,13 @@
     </div>
     <img src="assets/background.png" alt="" class="hero__img">
 </section>
-<section class="stats">
+<section id="stats" class="stats">
     <h2 class="stats__title">
         The most popular sales platform in country
     </h2>
     <div class="stats__container">
         <div class="stats__element">
-            <div class="icon icon--first">
+            <div class="stats__icon stats__icon--first">
             </div>
             <p class="stats__number">
                 100000+
@@ -71,7 +61,7 @@
             </p>
         </div>
         <div class="stats__element">
-            <div class="icon icon--second">
+            <div class="stats__icon stats__icon--second">
             </div>
             <p class="stats__number">
                 2000000+
@@ -81,7 +71,7 @@
             </p>
         </div>
         <div class="stats__element">
-            <div class="icon icon--third">
+            <div class="stats__icon stats__icon--third">
             </div>
             <p class="stats__number">
                 10000+
@@ -92,7 +82,7 @@
         </div>
     </div>
 </section>
-<section class="benefits">
+<section id="benefits" class="benefits">
     <div class="benefits__container">
         <div class="benefits__element">
             <div class="column column--second-color">
@@ -141,7 +131,7 @@
         </div>
     </div>
 </section>
-<section class="pricing">
+<section id="pricing" class="pricing">
     <h2 class="pricing__title">
         Pricing
     </h2>
@@ -206,7 +196,7 @@
         </div>
     </div>
 </section>
-<section class="contact">
+<section id="contact" class="contact">
     <div class="contact__left">
         <h2 class="contact__title">
             Any questions?
@@ -243,5 +233,24 @@
         </form>
     </div>
 </section>
+<footer class="footer">
+<div class="container">
+    <div class="footer__left">
+        <a href="#home" class="logo logo--small">BestShop</a>
+        <p class="copywright">
+            © 2019 BestShop LTD, All Rights Reserved
+        </p>
+    </div>
+    <div class="footer__right">
+        <a href="https://twitter.com/" class="twitter-logo">
+            <img src="assets/t.svg" alt="">
+        </a>
+        <a href="https://facebook.com/" class="facebook-logo">
+            <img src="assets/facebook.svg" alt="">
+        </a>
+    </div>
+</div>
+</footer>
 </body>
 </html>
+

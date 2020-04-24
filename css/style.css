@@ -9,6 +9,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body a {
@@ -22,6 +23,17 @@ body a {
     margin: 0 auto;
 }
 
+.btn {
+    color: white;
+    background-color: var(--color-main);
+    border-radius: 40px;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 10px 14px rgba(124, 120, 116, 0.36);
+}
 
 /*
 -------------------------------------------------------------
@@ -29,9 +41,12 @@ HEADER
 -------------------------------------------------------------
  */
 
-
 .header {
     box-shadow: 0 3px 6px #00000029;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 3;
 }
 
 .header__container {
@@ -70,6 +85,11 @@ HEADER
     align-items: center;
     border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
+
+.header__nav-item a{
+    padding: 29px 0;
+}
+
 
 .header__nav-item:hover {
     color: black;
@@ -115,18 +135,6 @@ HERO
     margin: 20px auto;
 }
 
-.btn {
-    color: white;
-    background-color: var(--color-main);
-    border-radius: 40px;
-    border: none;
-}
-
-.btn:hover {
-    transform: scale(1.03);
-    box-shadow: 5px 10px 14px rgba(124, 120, 116, 0.36);
-}
-
 .btn-container {
     display: flex;
     justify-content: center;
@@ -164,7 +172,7 @@ STATISTICS
     font-size: 36px;
     font-family: var(--font-second);
     color: #000000;
-    margin: 100px auto;
+    padding: 100px 0;
 }
 
 .stats__container {
@@ -172,7 +180,6 @@ STATISTICS
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 120px;
-
 }
 
 .stats__element {
@@ -182,7 +189,7 @@ STATISTICS
     margin: 0 185px;
 }
 
-.icon {
+.stats__icon {
     width: 63px;
     height: 63px;
     border-radius: 50%;
@@ -190,35 +197,35 @@ STATISTICS
 
 }
 
-.icon--first {
+.stats__icon--first {
     background: var(--color-second);
 }
 
-.icon--second {
+.stats__icon--second {
     background: var(--color-main);
 }
 
-.icon--third {
+.stats__icon--third {
     background: var(--color-third);
 }
 
-.icon::after {
+.stats__icon::after {
     position: absolute;
 }
 
-.icon--first::after {
+.stats__icon--first::after {
     content: url("../assets/person.svg");
     top: 8%;
     left: 50%;
 }
 
-.icon--second::after {
+.stats__icon--second::after {
     content: url("../assets/eye.svg");
     top: 22%;
     left: 30%;
 }
 
-.icon--third::after {
+.stats__icon--third::after {
     content: url("../assets/catalog.svg");
     top: 8%;
     left: 50%;
@@ -240,13 +247,11 @@ STATISTICS
     line-height: 20px;
 }
 
-
 /*
 -------------------------------------------------------------
 BENEFITS
 -------------------------------------------------------------
  */
-
 
 .benefits {
     background-color: #F7F7F7;
@@ -397,13 +402,11 @@ BENEFITS
     min-width: 623px;
 }
 
-
 /*
 -------------------------------------------------------------
 PRICING
 -------------------------------------------------------------
  */
-
 
 .pricing {
 }
@@ -412,7 +415,7 @@ PRICING
     font-size: 36px;
     font-family: var(--font-second);
     text-align: center;
-    margin: 100px 0 50px 0;
+    padding: 100px 0 50px 0;
 }
 
 .pricing__elements {
@@ -430,7 +433,6 @@ PRICING
     flex-direction: column;
     align-items: center;
     position: relative;
-
 }
 
 .pricing__element--basic {
@@ -460,7 +462,6 @@ PRICING
 .pricing__element--premium .pricing__cost {
     color: var(--color-third);
 }
-
 
 .pricing__element-title {
     font-weight: bold;
@@ -508,7 +509,6 @@ PRICING
 
 .pricing_list-element--no::before {
     content: url("../assets/close.svg");
-
 }
 
 .pricing__element--professional .pricing_list-element {
@@ -539,13 +539,11 @@ PRICING
     box-shadow: 5px 10px 14px #07ACE629;
 }
 
-
 /*
 -------------------------------------------------------------
 CONTACT
 -------------------------------------------------------------
  */
-
 
 .contact {
     display: flex;
@@ -643,7 +641,7 @@ CONTACT
     font-size: 11px;
     font-family: var(--font-main);
     text-transform: uppercase;
-    letter-spacing: 3.28px;
+    letter-spacing: 3px;
 }
 
 .contact__form-name input,
@@ -667,7 +665,6 @@ CONTACT
     display: block;
 }
 
-
 .btn-send {
     font-weight: bold;
     font-size: 13px;
@@ -677,3 +674,54 @@ CONTACT
     align-self: flex-end;
 }
 
+/*
+-------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------
+*/
+
+.footer {
+    height: 89px;
+    background: #F7F7F7;
+    box-shadow: 0 -5px 40px #00000029;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer__left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logo--small {
+    font-size: 26px;
+}
+
+.copywright {
+    font-size: 11px;
+    margin-top: 6px;
+    font-family: var(--font-main);
+    color: #A5A5A5;
+}
+
+.footer__right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.twitter-logo {
+    margin-right: 20px;
+}
+
+.facebook-logo {
+
+}
