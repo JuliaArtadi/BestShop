@@ -419,6 +419,7 @@ PRICING
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 179px;
 }
 
 .pricing__element {
@@ -429,6 +430,7 @@ PRICING
     flex-direction: column;
     align-items: center;
     position: relative;
+
 }
 
 .pricing__element--basic {
@@ -448,7 +450,7 @@ PRICING
 }
 
 .pricing__element--basic .pricing__cost {
-   color: var(--color-second);
+    color: var(--color-second);
 }
 
 .pricing__element--professional .pricing__cost {
@@ -477,7 +479,7 @@ PRICING
 
 .pricing__extra-text {
     font-weight: bold;
-    font-size:12px;
+    font-size: 12px;
     font-family: var(--font-second);
     color: #13253B;
     margin-top: 25px;
@@ -485,7 +487,7 @@ PRICING
 }
 
 .pricing__list {
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -498,7 +500,7 @@ display: flex;
 }
 
 .pricing_list-element::before {
-content: url("../assets/ckechmark.svg");
+    content: url("../assets/ckechmark.svg");
     position: absolute;
     top: 0;
     left: -21px;
@@ -536,3 +538,142 @@ content: url("../assets/ckechmark.svg");
     background-color: #55DFB4;
     box-shadow: 5px 10px 14px #07ACE629;
 }
+
+
+/*
+-------------------------------------------------------------
+CONTACT
+-------------------------------------------------------------
+ */
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact__left {
+    padding-right: 114px;
+    margin-bottom: 270px;
+}
+
+.contact__title {
+    font-size: 49px;
+    font-family: var(--font-second);
+}
+
+.contact__text {
+    font-size: 16px;
+    font-family: var(--font-main);
+    margin: 22px 0 40px 0;
+}
+
+.contact__info {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--font-main);
+    color: #A5A5A5;
+    display: flex;
+    align-items: center;
+}
+
+.contact__icon-mail {
+    padding-right: 10px;
+}
+
+.contact__icon-phone {
+    padding: 0 10px 0 20px;
+}
+
+.contact__right {
+    width: 440px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form-checkbox * {
+    display: block;
+}
+
+.contact__form-checkbox {
+    font-weight: lighter;
+    font-size: 10px;
+    font-family: var(--font-main);
+    line-height: 17px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0;
+    color: #B2B2B2;
+}
+
+.contact__form-checkbox span {
+    padding-left: 10px;
+}
+
+.contact__form-checkbox input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    outline: none;
+    flex-shrink: 0;
+    padding: 0;
+    background: #FFFFFF no-repeat padding-box;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+}
+
+.contact__form-checkbox input:checked {
+    background-image: url("../assets/checkmark2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact__form-name,
+.contact__form-email {
+    display: block;
+    color: var(--color-main);
+    font-weight: bold;
+    font-size: 11px;
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    letter-spacing: 3.28px;
+}
+
+.contact__form-name input,
+.contact__form-email input {
+    display: block;
+    width: 100%;
+    padding: 24px 14px 2px 14px;
+    font-size: 14px;
+    margin-bottom: 42px;
+    border: none;
+    border-bottom: 1px solid #95989A;
+}
+
+
+.contact__form-name input::after,
+.contact__form-email input::after {
+    content: "";
+    width: 444px;
+    height: 4px;
+    color: #95989A;
+    display: block;
+}
+
+
+.btn-send {
+    font-weight: bold;
+    font-size: 13px;
+    font-family: var(--font-main);
+    padding: 20px 97px;
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
