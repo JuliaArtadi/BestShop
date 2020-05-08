@@ -1,6 +1,9 @@
 @import "generic/reset";
 @import "settings/variables";
 @import "elements/base";
+@import "settings/hamburger-settings";
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
 @import "elements/header";
 @import "elements/hero";
 @import "elements/statistics";
