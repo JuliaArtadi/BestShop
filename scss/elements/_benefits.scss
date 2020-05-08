@@ -1,0 +1,148 @@
+.benefits {
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.benefits__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 106px;
+  margin-bottom: 105px;
+}
+
+.benefits__element {
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  min-width: 1124px;
+  height: 370px;
+  background-color: white;
+  margin-bottom: 37px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.column {
+  margin: 0 20px 0 35px;
+  width: 416px;
+  height: 188px;
+  position: relative;
+}
+
+.column::after {
+  content: "";
+  width: 328px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+}
+
+.column--second-color::after {
+  background-color: $color-second;
+}
+
+.column--main-color::after {
+  background-color: $color-main;
+}
+
+.column--third-color::after {
+  background-color: $color-third;
+}
+
+.benefits__title {
+  font-family: $font-second;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.benefits__text {
+  font-family: $font-main;
+  width: 100%;
+  position: relative;
+}
+
+.benefits__img {
+  height: auto;
+  z-index: 2;
+  position: relative;
+  align-self: flex-end;
+}
+
+.benefits img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.benefits__img--laptop {
+  width: 386px;
+  margin-right: 118px;
+  margin-bottom: 38px;
+}
+
+.benefits__img--laptop::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  background-color: #FB3B64;
+  border-radius: 41px;
+  top: -16%;
+  right: -3%;
+}
+
+.benefits__img--phone {
+  width: 426px;
+  height: auto;
+}
+
+.benefits__img--phone::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: #07ACE6;
+  border-radius: 50%;
+  left: 1%;
+  top: -7%;
+  margin-left: 70px;
+  margin-bottom: 13px;
+}
+
+.benefits__img--phone img {
+  width: 100%;
+}
+
+.benefits__img-background .benefits__img--trumpet {
+  width: 296px;
+  height: auto;
+  position: absolute;
+  top: 27%;
+  left: 15%;
+}
+
+.benefits__img-background {
+  width: 440px;
+  height: 370px;
+  background-color: $color-third;
+  position: relative;
+}
+
+.benefits__element--space {
+  min-width: 1124px;
+  height: 370px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+
+.benefits__element--small {
+  min-width: 623px;
+}

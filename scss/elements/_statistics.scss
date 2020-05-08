@@ -1,0 +1,83 @@
+.stats {
+
+}
+
+.stats__title {
+  text-align: center;
+  font-size: 36px;
+  font-family: $font-second;
+  color: #000000;
+  padding: 100px 0;
+}
+
+.stats__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 120px;
+}
+
+.stats__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 185px;
+}
+
+.stats__icon {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  position: relative;
+
+}
+
+.stats__icon--first {
+  background: $color-second;
+}
+
+.stats__icon--second {
+  background: $color-main;
+}
+
+.stats__icon--third {
+  background: $color-third;
+}
+
+.stats__icon::after {
+  position: absolute;
+}
+
+.stats__icon--first::after {
+  content: url("../assets/person.svg");
+  top: 8%;
+  left: 50%;
+}
+
+.stats__icon--second::after {
+  content: url("../assets/eye.svg");
+  top: 22%;
+  left: 30%;
+}
+
+.stats__icon--third::after {
+  content: url("../assets/catalog.svg");
+  top: 8%;
+  left: 50%;
+}
+
+.stats__number {
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: $font-second;
+  letter-spacing: 6px;
+  padding: 14px 0 19px 0;
+}
+
+.stats__text {
+  font-size: 17px;
+  font-family: $font-second;
+  color: #A5A5A5;
+  text-align: center;
+  line-height: 20px;
+}

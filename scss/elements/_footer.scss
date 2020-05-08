@@ -1,0 +1,45 @@
+.footer {
+  height: 89px;
+  background: #F7F7F7;
+  box-shadow: 0 -5px 40px #00000029;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.footer__left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo--small {
+  font-size: 26px;
+}
+
+.copywright {
+  font-size: 11px;
+  margin-top: 6px;
+  font-family: $font-main;
+  color: #A5A5A5;
+}
+
+.footer__right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.twitter-logo {
+  margin-right: 20px;
+}
+
+.facebook-logo {
+
+}

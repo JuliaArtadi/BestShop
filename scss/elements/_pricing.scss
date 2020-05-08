@@ -1,0 +1,130 @@
+.pricing {
+}
+
+.pricing__title {
+  font-size: 36px;
+  font-family: $font-second;
+  text-align: center;
+  padding: 100px 0 50px 0;
+}
+
+.pricing__elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 179px;
+}
+
+.pricing__element {
+  border-radius: 18px;
+  width: 372px;
+  height: 461px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.pricing__element--basic {
+  border: 1px solid $color-second;
+}
+
+.pricing__element--professional {
+  border: 1px solid $color-main;
+  box-shadow: 5px 10px 27px #07ACE629;
+  width: 405px;
+  height: 500px;
+  margin: 0 58px;
+}
+
+.pricing__element--premium {
+  border: 1px solid $color-third;
+}
+
+.pricing__element--basic .pricing__cost {
+  color: $color-second;
+}
+
+.pricing__element--professional .pricing__cost {
+  color: $color-main;
+}
+
+.pricing__element--premium .pricing__cost {
+  color: $color-third;
+}
+
+.pricing__element-title {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: $font-second;
+  color: #13253B;
+  margin-top: 34px;
+}
+
+.pricing__cost {
+  font-weight: lighter;
+  font-size: 46px;
+  font-family: $font-main;
+  margin-top: 14px;
+}
+
+.pricing__extra-text {
+  font-weight: bold;
+  font-size: 12px;
+  font-family: $font-second;
+  color: #13253B;
+  margin-top: 25px;
+  margin-bottom: 61px;
+}
+
+.pricing__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing_list-element {
+  font-size: 14px;
+  font-family: $font-main;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.pricing_list-element::before {
+  content: url("../assets/ckechmark.svg");
+  position: absolute;
+  top: 0;
+  left: -21px;
+}
+
+.pricing_list-element--no::before {
+  content: url("../assets/close.svg");
+}
+
+.pricing__element--professional .pricing_list-element {
+  margin-bottom: 27px;
+}
+
+.btn-pricing {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: $font-main;
+  padding: 16px 57px;
+  position: absolute;
+  bottom: -26px;
+}
+
+.btn-basic {
+  background-color: #EB476E;
+}
+
+.btn-professional {
+  background-color: #07ACE6;
+  box-shadow: 5px 10px 14px #07ACE629;
+}
+
+.btn-premium {
+  background-color: #55DFB4;
+  box-shadow: 5px 10px 14px #07ACE629;
+}

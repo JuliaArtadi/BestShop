@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body a {
+  text-decoration: none;
+}
+
+
+.container {
+  max-width: 1372px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.btn {
+  color: white;
+  background-color: $color-main;
+  border-radius: 40px;
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 10px 14px rgba(124, 120, 116, 0.36);
+}
