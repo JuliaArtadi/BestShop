@@ -9,9 +9,21 @@ body a {
 
 
 .container {
-  max-width: 1372px;
-  padding: 0 10px;
+  max-width: 1362px;
+  padding: 0 15px;
   margin: 0 auto;
+
+  @media (max-width: 1352px) {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.logo {
+  font-weight: lighter;
+  font-size: 32px;
+  font-family: $font-second;
+  color: $color-main;
 }
 
 .btn {
