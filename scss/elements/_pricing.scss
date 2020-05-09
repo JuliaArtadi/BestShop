@@ -106,10 +106,7 @@
 }
 
 .btn-pricing {
-  color: white;
-  font-weight: bold;
-  font-size: 13px;
-  font-family: $font-main;
+  @extend %btn;
   padding: 16px 57px;
   position: absolute;
   bottom: -26px;

@@ -119,9 +119,7 @@
 }
 
 .btn-send {
-  font-weight: bold;
-  font-size: 13px;
-  font-family: $font-main;
+  @extend %btn;
   padding: 20px 97px;
   margin-top: 20px;
   align-self: flex-end;

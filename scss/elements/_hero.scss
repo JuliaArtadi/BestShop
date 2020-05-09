@@ -22,25 +22,26 @@
 
   &__img {
     height: calc(40vh + 10vw);
-   vertical-align: bottom;
+    vertical-align: bottom;
   }
 }
 
 .img-container {
   overflow: hidden;
-display: flex;
+  display: flex;
   align-items: flex-end;
 }
 
 .btn-main {
+  @extend %btn;
   padding: 22px 157px;
   margin: 20px;
   box-shadow: 5px 10px 14px #07ACE629;
   background-color: $color-main;
+  font-size: 16px;
 }
 
 @media (max-width: 660px) {
-
   .hero {
 
     &__text {

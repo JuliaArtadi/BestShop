@@ -26,20 +26,19 @@ body a {
   color: $color-main;
 }
 
-.btn {
+%btn {
   color: white;
   background-color: $color-main;
   border-radius: 40px;
   border: none;
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 13px;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 10px 14px rgba(124, 120, 116, 0.36);
+  }
 }
 
-.btn:hover {
-  transform: scale(1.03);
-  box-shadow: 5px 10px 14px rgba(124, 120, 116, 0.36);
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-}
 
