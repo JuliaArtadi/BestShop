@@ -1,6 +1,18 @@
+@use "sass:map";
+@use "sass:list";
+
 $color-main: #08A6E4;
 $color-main-shadow: rgba(7, 172, 230, .16);
 $color-second: #FB3B64;
 $color-third: #55DFB4;
 $font-main: 'Open Sans', sans-serif;
 $font-second: 'Raleway', sans-serif;
+
+
+$colors: (
+"color-main": $color-main,
+"color-second": $color-second,
+"color-third": $color-third
+);
+
+$c: map.keys($colors);
