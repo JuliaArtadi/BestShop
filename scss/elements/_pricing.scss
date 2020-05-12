@@ -1,127 +1,206 @@
+@mixin p-color($color) {
+  border: 1px solid $color;
+
+  .pricing__cost {
+    color: $color;
+  }
+}
+
 .pricing {
+
+  &__title {
+    font-size: 36px;
+    font-family: $font-second;
+    text-align: center;
+    padding: 100px 0 50px 0;
+  }
+
+  &__elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 179px;
+  }
+
+  &__element {
+    border-radius: 18px;
+    width: 372px;
+    height: 461px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &--basic {
+     @include p-color($color-second);
+    }
+
+    &--professional {
+     @include p-color($color-main);
+      box-shadow: 5px 10px 27px #07ACE629;
+      width: 405px;
+      height: 500px;
+      margin: 0 58px;
+
+      .pricing_list-element {
+        margin-bottom: 27px;
+      }
+    }
+
+    &--premium {
+      @include p-color($color-third);
+    }
+
+    &-title {
+      font-weight: bold;
+      font-size: 20px;
+      font-family: $font-second;
+      color: #13253B;
+      margin-top: 34px;
+    }
+  }
+
+  &-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__cost {
+    font-weight: lighter;
+    font-size: 46px;
+    font-family: $font-main;
+    margin-top: 14px;
+  }
+
+  &__extra-text {
+    font-weight: bold;
+    font-size: 12px;
+    font-family: $font-second;
+    color: #13253B;
+    margin-top: 25px;
+    margin-bottom: 61px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_list-element {
+    font-size: 14px;
+    font-family: $font-main;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+      content: url("../assets/ckechmark.svg");
+      position: absolute;
+      top: 0;
+      left: -21px;
+    }
+
+    &--no::before {
+      content: url("../assets/close.svg");
+    }
+  }
 }
 
-.pricing__title {
-  font-size: 36px;
-  font-family: $font-second;
-  text-align: center;
-  padding: 100px 0 50px 0;
+.btn {
+  &-pricing {
+    @extend %btn;
+    padding: 16px 57px;
+    position: absolute;
+    bottom: -26px;
+  }
+
+  &-basic {
+    background-color: #EB476E;
+  }
+
+  &-professional {
+    background-color: #07ACE6;
+    box-shadow: 5px 10px 14px #07ACE629;
+  }
+
+  &-premium {
+    background-color: #55DFB4;
+    box-shadow: 5px 10px 14px #07ACE629;
+  }
 }
 
-.pricing__elements {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 179px;
+@media (max-width: 1352px) {
+  .pricing__elements {
+    padding: 0 40px;
+  }
 }
 
-.pricing__element {
-  border-radius: 18px;
-  width: 372px;
-  height: 461px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+@media (max-width: 1000px) {
+  .pricing__title {
+    padding-top: 50px;
+  }
+
+  .pricing__elements {
+    margin-bottom: 150px;
+  }
 }
 
-.pricing__element--basic {
-  border: 1px solid $color-second;
+@media (max-width: 850px) {
+  .pricing__elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .pricing__element {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 251px;
+    margin-bottom: 54px;
+
+    &--professional {
+      height: 277px;
+    }
+  }
 }
 
-.pricing__element--professional {
-  border: 1px solid $color-main;
-  box-shadow: 5px 10px 27px #07ACE629;
-  width: 405px;
-  height: 500px;
-  margin: 0 58px;
+@media (max-width: 550px) {
+  .pricing__element {
+    width: 90%;
+
+    &--professional {
+      width: 100%;
+    }
+  }
 }
 
-.pricing__element--premium {
-  border: 1px solid $color-third;
-}
+@media (max-width: 420px) {
+  .pricing {
+    &__elements {
+      padding: 0 20px;
+    }
 
-.pricing__element--basic .pricing__cost {
-  color: $color-second;
-}
+    &__element-title {
+      font-size: 14px;
+    }
 
-.pricing__element--professional .pricing__cost {
-  color: $color-main;
-}
+    &__extra-text {
+      font-size: 11px;
+    }
 
-.pricing__element--premium .pricing__cost {
-  color: $color-third;
-}
+    &__cost {
+      font-size: 40px;
+    }
 
-.pricing__element-title {
-  font-weight: bold;
-  font-size: 20px;
-  font-family: $font-second;
-  color: #13253B;
-  margin-top: 34px;
-}
+    &__title {
+      padding-bottom: 15px;
+    }
 
-.pricing__cost {
-  font-weight: lighter;
-  font-size: 46px;
-  font-family: $font-main;
-  margin-top: 14px;
-}
-
-.pricing__extra-text {
-  font-weight: bold;
-  font-size: 12px;
-  font-family: $font-second;
-  color: #13253B;
-  margin-top: 25px;
-  margin-bottom: 61px;
-}
-
-.pricing__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.pricing_list-element {
-  font-size: 14px;
-  font-family: $font-main;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.pricing_list-element::before {
-  content: url("../assets/ckechmark.svg");
-  position: absolute;
-  top: 0;
-  left: -21px;
-}
-
-.pricing_list-element--no::before {
-  content: url("../assets/close.svg");
-}
-
-.pricing__element--professional .pricing_list-element {
-  margin-bottom: 27px;
-}
-
-.btn-pricing {
-  @extend %btn;
-  padding: 16px 57px;
-  position: absolute;
-  bottom: -26px;
-}
-
-.btn-basic {
-  background-color: #EB476E;
-}
-
-.btn-professional {
-  background-color: #07ACE6;
-  box-shadow: 5px 10px 14px #07ACE629;
-}
-
-.btn-premium {
-  background-color: #55DFB4;
-  box-shadow: 5px 10px 14px #07ACE629;
+    &__list {
+      align-items: flex-start;
+    }
+  }
 }
