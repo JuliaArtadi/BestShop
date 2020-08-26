@@ -49,6 +49,7 @@ function css() {
 function watch() {
     gulp.watch('./scss/**/*.scss', gulp.series(css));
     gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch(entryPath + "./js/*.js", browserSync.reload);
 }
 
 module.exports.css = css;

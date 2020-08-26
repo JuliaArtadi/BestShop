@@ -1,5 +1,4 @@
 .stats {
-
   &__title {
     text-align: center;
     font-size: 36px;
@@ -92,7 +91,6 @@
 
 @media (max-width: 850px) {
   .stats {
-
     &__title {
       padding: 70px 0;
     }
@@ -109,7 +107,6 @@
 
 @media (max-width: 660px) {
   .stats {
-
     &__title {
       font-size: 30px;
     }
@@ -118,7 +115,6 @@
 
 @media (max-width: 550px) {
   .stats {
-
     &__title {
       padding: 50px 0 30px 0;
     }
